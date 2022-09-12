@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace BasicYARPSample
+namespace Cm.ReverseProxyServer
 {
     // Sets up the ASP.NET application with the reverse proxy enabled.
     public class Startup
