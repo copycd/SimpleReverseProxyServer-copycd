@@ -27,8 +27,8 @@
           { "PathPattern": "/{**catch-all}" }
         ]
       },
-      "serviceAll": {
-        "ClusterId": "serviceAllCluster",
+      "serviceDefault": {
+        "ClusterId": "serviceDefaultCluster",
         "Match": {
           "Path": "/{**catch-all}"
         },
@@ -52,7 +52,7 @@
           }
         }
       },
-      "serviceAllCluster": {
+      "serviceDefaultCluster": {
         "Destinations": {
           "destination1": {
             "Address": "http://localhost:25055/"
