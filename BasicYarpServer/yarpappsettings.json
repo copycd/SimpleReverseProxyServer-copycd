@@ -27,6 +27,15 @@
           { "PathPattern": "/{**catch-all}" }
         ]
       },
+      "serviceGrpc": {
+        "ClusterId": "serviceGrpcCluster",
+        "Match": {
+          "Path": "/grpc/{**catch-all}"
+        },
+        "Transforms": [
+          { "PathPattern": "/{**catch-all}" }
+        ]
+      },
       "serviceDefault": {
         "ClusterId": "serviceDefaultCluster",
         "Match": {
@@ -48,7 +57,14 @@
       "serviceCSCluster": {
         "Destinations": {
           "destination1": {
-            "Address": "http://localhost:7073/"
+            "Address": "http://localhost:25057/"
+          }
+        }
+      },
+      "serviceGrpcCluster": {
+        "Destinations": {
+          "destination1": {
+            "Address": "http://localhost:25058/"
           }
         }
       },
